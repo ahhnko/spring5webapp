@@ -15,7 +15,7 @@ public class Author {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	private String firstNme;
+	private String firstName;
 	private String lastName;
 
 	@ManyToMany(mappedBy = "authors")
@@ -25,7 +25,7 @@ public class Author {
 	}
 
 	public Author(String firstNme, String lastName) {
-		this.firstNme = firstNme;
+		this.firstName = firstNme;
 		this.lastName = lastName;
 	}
 
@@ -37,12 +37,12 @@ public class Author {
 		this.id = id;
 	}
 
-	public String getFirstNme() {
-		return firstNme;
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setFirstNme(String firstNme) {
-		this.firstNme = firstNme;
+	public void setFirstName(String firstNme) {
+		this.firstName = firstNme;
 	}
 
 	public String getLastName() {
@@ -80,7 +80,7 @@ public class Author {
 
 	@Override
 	public String toString() {
-		return "Author [id=" + id + ", firstNme=" + firstNme + ", lastName=" + lastName + ", books=" + books + "]";
+		return "Author [id=" + id + ", firstNme=" + firstName + ", lastName=" + lastName + ", books=" + books + "]";
 	}
 
 }
