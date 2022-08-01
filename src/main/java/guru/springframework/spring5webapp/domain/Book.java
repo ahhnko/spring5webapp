@@ -24,18 +24,9 @@ public class Book {
 	private Set<Author> author = new HashSet<>();
 
 	public Book() {
-		super();
-	}
-
-	public Book(String title, String isbn, Set<Author> author) {
-		super();
-		this.title = title;
-		this.isbn = isbn;
-		this.author = author;
 	}
 
 	public Book(String title, String isbn) {
-		super();
 		this.title = title;
 		this.isbn = isbn;
 	}
